@@ -1,9 +1,10 @@
-.banner {
-    width: 100%;
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
 }
 
-h1 {
-    text-align: center;
+.banner {
+    width: 100%;
 }
 
 img {
@@ -11,3 +12,10 @@ img {
     margin: auto;    
     display: block;
 }
+
+section {
+    width: 200px;
+    background-color: #faf8f8;
+    
+}
+
