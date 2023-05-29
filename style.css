@@ -1,3 +1,263 @@
-endereco {
-    background-image: url(assets/mapa/search.svg);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    --branco: #FFFFFF;    
+    --texto-principal: #0B1D03;
+    --cafes: #F7F1E6;
+    --preco-cafe: #969696;
+    --mapa: #969696;
+    --redes-sociais: #1F1F1F; 
+    --cinza-section: #F7F1E6; 
+    --variedades-cafes: #A0996C;   
 }
+
+body{        
+    margin: 0;    
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;    
+    color: var(--texto-principal);
+    background-color: var(--branco);    
+    
+       
+}  
+
+header {
+    position: relative;
+    background-repeat: no-repeat; 
+    background-image: url(assets/banner/cafeteria.png); 
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    color: var(--branco);
+    position: absolute;
+    top: 3%;
+    left: 50%;  
+}
+
+.destaques {
+    width: 85%;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;   
+}
+
+.destaque {
+    width: 85%;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;    
+    margin-bottom: 50px;
+    
+}
+
+.destaques img {  
+    height: 350px;
+}
+
+.destaque-texto {
+    width: 400px;      
+}
+
+.destaque-texto h3 {
+    color: var(--texto-principal);
+    font-size: 40px;
+}
+
+.destaque-texto p {
+    font-weight: 100;
+    line-height: 24px;
+    font-size: 20px;
+    font-family: Open Sans;
+}
+
+.variedades-cafes {
+    width: 100%;    
+    display: flex;   
+}
+
+.variedades {  
+    width: 15%;
+    position: relative; 
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: Open, sans;
+    font-style: normal; 
+    margin-bottom: 100px;
+    
+}
+
+.variedades h3 {
+    color: var(--variedades-cafes);
+    width: 580px;
+    height: 50px;
+    text-align: center;
+    font-size: 56px;
+    line-height: 60px;
+    font-style: normal;
+}
+
+.variedades button {
+    height: 40px;
+    width: 170px;       
+    justify-content: center;
+    align-items: center;
+    background-color: var(--texto-principal);
+    color: var(--branco);
+        
+}
+
+.variedade1 {  
+    width: 200px;
+    display: flex; 
+    flex-direction: column;    
+    justify-content: space-between; 
+    text-align: center;  
+    background-color: var(--cafes);
+    border-radius: 12px;    
+    margin-left: 500px;
+    font-family: Open, sans;
+    font-style: normal;    
+}
+
+.sistemas {
+    display: flex;
+    margin-top: 60px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    font-family: Open, sans;
+    flex-direction: row;
+    justify-content: space-around;    
+    align-items: center;
+    text-align: center;
+}
+
+.catalogos {
+    display: flex; 
+    justify-content: space-around;  
+    margin-left: 100px;
+    margin-right: 100px;  
+    margin-bottom: 30px;
+}
+
+.catalogos h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-size: 36px;
+    align-items: flex-end; 
+}
+
+.catalogos p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 8px;
+    align-items: flex-end; 
+}
+
+.catalogo {
+    font-size: 20px;    
+    padding: 20px;
+    width: 500px;
+    height: 360px;
+    line-height: 20px;
+    background-image: url(assets/catalogo/catalogo-cafe.png);
+    color: var(--branco);
+}
+
+.acessorio {
+    font-size: 20px;
+    padding: 20px;
+    width: 500px;
+    height: 360px;
+    line-height: 20px;
+    background-image: url(assets/catalogo/acessorios.png);
+    color: var(--branco);    
+}
+
+.mapas h4 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 30px;
+    margin-left: 120px;
+}
+
+.mapa {
+        
+    display: flex;
+    margin-left: 120px;
+    margin-top: 20px;    
+}
+
+.cidade {
+    display: flex;
+    margin-left: 120px;
+    color: var(--preco-cafe);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinza-section);    
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.container h6{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0 10px 0;
+}
+
+.creditos {
+    display: flex;
+    flex-direction: row;
+    margin: 60px 0 20px 0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.creditos p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.creditos img {
+    margin-left: 6px;
+    width: 110px;
+}
+
+
+
