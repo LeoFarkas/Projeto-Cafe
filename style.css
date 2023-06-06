@@ -8,56 +8,146 @@
     --mapa: #969696;
     --redes-sociais: #1F1F1F; 
     --cinza-section: #F7F1E6; 
-    --variedades-cafes: #A0996C;   
+    --variedades-cafes: #A0996C;       
 }
 
 body{        
     margin: 0;    
     font-family: 'Playfair Display', serif;
-    font-size: 16px;    
+    background-color: #F5F5F5;      
     color: var(--texto-principal);
-    background-color: var(--branco);    
+    background-color: var(--branco);
+    background-repeat: no-repeat;
+    background-image: url(assets/banner/cafeteria.png);  
+}
+
+header {        
+    width: 100%;
     
-       
-}  
+} 
 
-header {
-    position: relative;
-    background-repeat: no-repeat; 
-    background-image: url(assets/banner/cafeteria.png); 
+.menus {
+    display: flex;    
 }
 
-header h1 {
+.botao-menu { 
+    display: flex;   
+    width: 20px;    
+    margin-left: 80px; 
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.botao-menu img {
     display: flex;
-    justify-content: center;
-    font-size: 24px;
-    align-items: center;
-    text-align: center;
-    color: var(--branco);
-    position: absolute;
-    top: 3%;
-    left: 50%;  
+    width: 26px;
+    cursor: pointer;
 }
+
+.texto-slog h1 {     
+    display: flex;
+    font-size: 26px;      
+    font-family: 'Playfair Display';
+    color: var(--branco);
+    margin-top: 40px; 
+    justify-content: center;
+    align-items: center;  
+    margin-left: 550px; 
+}
+
+.botao-sacola {  
+    display: flex;
+    justify-content: flex-start;
+    height: 20px;
+    width: 20px; 
+    margin-top: 40px;  
+    cursor: pointer;        
+}
+
+.botao-sacola img {
+    display: flex;
+    margin-left: 500px;    
+}
+
+.container2 h2 {
+    display: flex;    
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    width: 450px;
+    color: var(--branco);
+    margin-top: 40px;
+    margin-left: 80px;    
+}
+
+.container2 p {
+    display: flex;
+    width: 350px;    
+    font-weight: 5px;
+    font-size: 24px;
+    font-family: 'Open Sans';
+    color: var(--branco);   
+    margin-left: 80px;    
+}
+
+.menu-barra {
+    display: flex;
+    margin-top: 200px;   
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.controles {    
+    display: flex;
+    height: 36px; 
+    margin-top: 140px;      
+    color: var(--branco);  
+    font-size: 16px;
+    margin-left: 85px;
+    cursor: pointer;  
+}
+
+.esquerdo {
+    padding-left: 10px;
+}
+/* Fim da estilização do header */
+
 
 .destaques {
-    width: 85%;
-    display: flex;    
+    padding-top: 230px;
+    width: 90%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 70px;   
 }
 
 .destaque {
-    width: 85%;
-    display: flex;  
+    width: 100%;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;    
-    margin-bottom: 50px;
-    
+    justify-content: space-around;
+    margin-bottom: 100px;
+    padding-left: 70px;
+    padding-top: 20px;
 }
 
-.destaques img {  
-    height: 350px;
+.destaque-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom:100px;
+    padding-left: 80px;
+}
+
+.destaque-section img {
+    width: 500px;
+    height: 400px;
+}
+
+.destaque img {
+    width: 500px;
+    height: 400px;
 }
 
 .destaque-texto {
@@ -76,55 +166,93 @@ header h1 {
     font-family: Open Sans;
 }
 
-.variedades-cafes {
-    width: 100%;    
-    display: flex;   
-}
-
-.variedades {  
-    width: 15%;
-    position: relative; 
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: center;
-    font-family: Open, sans;
-    font-style: normal; 
-    margin-bottom: 100px;
-    
+.variedades {
+    margin-top: 10px;
+    display: flex;
+    align-items: center; 
 }
 
 .variedades h3 {
+    font-family: 'Playfair Display';
+    padding-top: 10px;
+    padding-left: 30px;
+    Width:100%;
     color: var(--variedades-cafes);
-    width: 580px;
-    height: 50px;
-    text-align: center;
+    line-height: 40px;
     font-size: 56px;
-    line-height: 60px;
-    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    height: 60px;
 }
 
-.variedades button {
-    height: 40px;
-    width: 170px;       
-    justify-content: center;
+.produtos {  
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
     align-items: center;
-    background-color: var(--texto-principal);
-    color: var(--branco);
-        
+    margin-top: 30px;   
 }
 
-.variedade1 {  
-    width: 200px;
-    display: flex; 
-    flex-direction: column;    
-    justify-content: space-between; 
-    text-align: center;  
-    background-color: var(--cafes);
-    border-radius: 12px;    
-    margin-left: 500px;
-    font-family: Open, sans;
-    font-style: normal;    
+.produto  button {
+    margin-bottom:  60px;
+    padding-right: 0px;
+    background: #0B1D03;
+    color: var(--branco);
+    width: 250px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
 }
+
+.produto {  
+    width: 100%;
+    border-radius: 8px;
+    Width: 300px;
+    margin-bottom: 50px;
+    Height: 430px;
+    align-items: center;
+    padding-left: 20px;
+    background: #F7F1E6; 
+}
+
+.produto  h6 {
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 20px;
+    font-weight:300;
+    color: #0B1D03;
+}
+
+.produto img {
+    width: 150px;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.produto p {
+    text-align: center;
+}
+
+.value{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 30px;
+    color: #0B1D03;
+    Width: 50px;
+}
+
+.second-value {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #969696;
+    width: 60px;
+    padding-left: 10px;
+}
+
 
 .sistemas {
     display: flex;
@@ -140,32 +268,17 @@ header h1 {
     text-align: center;
 }
 
-.catalogos {
-    display: flex; 
-    justify-content: space-around;  
-    margin-left: 100px;
-    margin-right: 100px;  
-    margin-bottom: 30px;
-}
-
-.catalogos h3 {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-size: 36px;
-    align-items: flex-end; 
-}
-
-.catalogos p {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 8px;
-    align-items: flex-end; 
+.cafe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-left: 70px;
+    background: #F5F5F5;
 }
 
 .catalogo {
-    font-size: 20px;    
+    font-size: 20px;
     padding: 20px;
     width: 500px;
     height: 360px;
@@ -174,36 +287,121 @@ header h1 {
     color: var(--branco);
 }
 
+.catalogo h3 {
+    padding-top: 200px;
+    width: 500px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 20px;
+}
+
+.catalogo p {
+    font-family: 'Open Sans';
+    font-weight: 300px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #FFFCF6;
+    Width: 400px;
+}
+
 .acessorio {
     font-size: 20px;
     padding: 20px;
     width: 500px;
     height: 360px;
     line-height: 20px;
+    margin-right: 60px;
     background-image: url(assets/catalogo/acessorios.png);
     color: var(--branco);    
 }
 
-.mapas h4 {
+.acessorio h3 {
+    padding-top: 200px;
+    width: 500px;
     font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 46px;
-    line-height: 30px;
-    margin-left: 120px;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--branco);  
 }
 
-.mapa {
-        
-    display: flex;
-    margin-left: 120px;
-    margin-top: 20px;    
+.acessorio p{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    color: #FFFCF6;
+    Width: 400px;
 }
 
-.cidade {
+.contato {
+    padding-top: 70px;
+    padding-left: 10px;
+    background: #F5F5F5;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.contato h3 {
+    width: 470px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 56px;
+    color: #0B1D03;
+    line-height: 60px;
+    padding-left: 100px;
+    height: 60px;
+}
+
+form select {
     display: flex;
-    margin-left: 120px;
-    color: var(--preco-cafe);
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 330px;
+    border: 2px solid #0B1D03;
+    border-radius: 4px;
+    height: 80px;
+}
+
+.escolha {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-left: 100px;
+    color: var(--preco-cafe);    
+    height: 51px;    
+    justify-content: flex-start;
+    align-items: center;
+    float: left;
+}
+
+form input {
+    display: flex;
+    flex-direction: row;
+    width: 830px;
+    border: 2px solid #0B1D03;
+    border-radius: 4px;
+    height: 45px;
+    margin-left: 100px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Digi-ende {
+    display: flex;
+    flex-direction: row;
+    margin-left: 450px;
+    color:#969696;    
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.iframe {
+    padding-left: 100px;
+    padding-top: 20px;
+    margin-bottom: 35px;
+    align-items: center;
 }
 
 footer {
@@ -217,34 +415,46 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
+    color: var(--redes-sociais);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+}   
 
 .brand {
-    font-size: 20px;
+    display: flex;
+    font-family: 'Playfair Display';
+    font-style: normal;
     font-weight: 700;
-    margin-top: 15px;
+    font-size: 28px;
+    line-height: 28px;
 }
 
-.container h6{
+.container h6 {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-ul {
-    list-style-type: none;
+.container ul {
+    text-decoration: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+.container li {
     margin: 10px 0 10px 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 .creditos {
     display: flex;
     flex-direction: row;
-    margin: 60px 0 20px 0;
+    margin: 60px 0 60px 0;
     align-items: flex-start;
     justify-content: center;
 }
@@ -255,6 +465,7 @@ li {
 }
 
 .creditos img {
+    margin-top: 3px;
     margin-left: 6px;
     width: 110px;
 }

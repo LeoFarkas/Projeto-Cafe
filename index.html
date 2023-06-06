@@ -4,48 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">    
     <title>Landing Page Coffee</title>
 </head>
 <body>
     <header>
-        <h1>Black<i>Coffee</h1></i> 
-        <div>
-            <div class="menu">
-                <button>
-                    <img class="menu-botao" class="menu-logo" src="assets/nav/menu.svg" alt="Menu Principal">
-                </button>
-             </div>                 
-             <div class="carrinho">
-                <button>
-                    <img class="carrinho-botao" class="carrinho-logo" class="carrinho-logo" src="assets/nav/carrinho.svg" alt="Carrinho de compras">
-                </button>
+        <div class="menus">
+            <div class="botao-menu">
+                <img src="assets/nav/menu.svg" alt="Menu Principal">
             </div>
-            <div class="slide">                
-                <button>
-                    <img class="slide-botao" src="assets/banner/slide.svg" alt="slide de fotos">
-                </button>
-             </div>
-            <div class="logo-cafeteria">                    
-                <img class="cafeteria-img" src="assets/banner/cafeteria.png" alt="Imagem da nossa cafeteria">                    
+            <div class="texto-slog">
+                <h1>Black<i>Coffee</i></h1>                
+            </div>                 
+            <div class="botao-sacola">                
+                <img src="assets/nav/carrinho.svg" alt="Carrinho de compras">
             </div>
-        </div>
-        <section>
-            <div class="texto-slide">
+        </div> 
+        <div class="container2">                   
+            <div> 
+                <img class="menu-barra" src="assets/banner/slide.svg" alt="slide de fotos">
+            </div>
                 <h2>Preparamos o melhor café fresco da torra cada dia</h2>                
-                <p>Entregamos em todo brasil</p>
-            </div>
-            <div class="botao-esquerdo">
-                <button>
-                    <img src="assets/banner/botao.esq.svg" alt="Botão para mover a esquerda">
-                </button>
-            </div>
-                <div class="botao-direito">                         
-                    <button>
-                        <img src="assets/banner/botao.dir.svg" alt="Botão para mover a direita">
-                    </button>
-                </div>
-        </section>              
+                <p>Entregamos em todo brasil</p>            
+            <div class="controles">
+                <img src="assets/banner/botao.dir.svg" alt="botao1">                
+                <img class="esquerdo" src="assets/banner/botao.esq.svg" alt="botao2">                
+            </div> 
+        </div>                   
     </header>    
     <main>       
         <section class="destaques">
@@ -58,9 +43,9 @@
                     <p>Preparado com os melhores ingredientes e com os melhores acessórios, seguindo os métodos tradicionais e os mais modernos.</p>
                 </div>
             </div>    
-            <div class="destaque"> 
+            <div class="destaque-section"> 
                 <div class="destaque-texto">               
-                    <h3>...e mutio mais</h3>
+                    <h3>...e muito mais</h3>
                    <p>Não esqueça de dar uma olhada em nossa seleção de sobremesas deliciosas!</p>
                 </div>                      
                 <div>
@@ -68,69 +53,75 @@
                 </div>
             </div>          
         </section>
-        <section class="variedades-cafes">
-            <div class="variedades">
-                <h3>Variedade de Café</h2>           
-                <div class="variedade1">
-                    <p>RUANDA UMARAGE NAT</p>
-                    <img src="assets/produtos/cafe1.png" alt="Imagem do café a venda">
-                    <p>R$ 40 R$ 60</p>
-                    <button>+ adicionar ao carrinho</button>
-                </div>
-                <div class="variedade1">
-                    <p>RUANDA UMARAGE NAT</p>
-                    <img src="assets/produtos/cafe2.png" alt="Imagem do café a venda">
-                    <p>R$ 40 R$ 60</p>
-                    <button>+ adicionar ao carrinho</button>
-                </div>
-                <div class="variedade1">
-                    <p>RUANDA UMARAGE NAT</p>
-                    <img src="assets/produtos/cafe3.png" alt="Imagem do café a venda">
-                    <p>R$ 40 R$ 60</p>
-                    <button>+ adicionar ao carrinho</button>
-                </div>
-                <div class="variedade1">
-                    <p>RUANDA UMARAGE NAT</p>
-                    <img src="assets/produtos/cafe4.png" alt="Imagem do café a venda">
-                    <p>R$ 40 R$ 60</p>
-                    <button>+ adicionar ao carrinho</button>
-                </div>
-                <div class="variedade1">
-                    <p>RUANDA UMARAGE NAT</p>
-                    <img src="assets/produtos/cafe5.png" alt="Imagem do café a venda">
-                    <p>R$ 40</p><p>R$ 60</p>
-                    <button>+ adicionar ao carrinho</button>
-                </div>
-                <div class="variedade1">
-                    <p>RUANDA UMARAGE NAT</p>
-                    <img src="assets/produtos/cafe6.png" alt="Imagem do café a venda">
-                    <p>R$ 40 R$ 60</p>
-                    <button>+ adicionar ao carrinho</button>
-                </div>
+        <section class="variedades">
+            <div>
+                <h3>Variedade de Café</h3> 
+            </div> 
+        </section> 
+        <section class="produtos">        
+            <div class="produto">
+                <h6>RUANDA UMARAGE NAT</h6>
+                <img src="assets/produtos/cafe1.png" alt="saco de café">
+                <p><spam class="value">40 R$</spam><span class="second-value">60 R$</span></p>
+                <button>+ adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <h6>RUANDA UMARAGE NAT</h6>
+                <img src="assets/produtos/cafe2.png" alt="saco de café">
+                <p><spam class="value">40 R$</spam><span class="second-value">60 R$</span></p>
+                <button>+ adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <h6>RUANDA UMARAGE NAT</h6>
+                <img src="assets/produtos/cafe3.png" alt="saco de café">
+                <p><spam class="value">40 R$</spam><span class="second-value">60 R$</span></p>
+                <button>+ adicionar ao carrinho</button>
+            </div>
+        </section>
+        <section class="produtos">
+            <div class="produto">
+                <h6>RUANDA UMARAGE NAT</h6>
+                <img src="assets/produtos/cafe4.png" alt="saco de café">
+                <p><spam class="value">40 R$</spam><span class="second-value">60 R$</span></p>
+                <button>+ adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <h6>RUANDA UMARAGE NAT</h6>
+                <img src="assets/produtos/cafe5.png" alt="saco de café">
+                <p><spam class="value">40 R$</spam><span class="second-value">60 R$</span></p>
+                <button>+ adicionar ao carrinho</button>
+            </div>
+            <div class="produto">
+                <h6>RUANDA UMARAGE NAT</h6>
+                <img src="assets/produtos/cafe6.png" alt="saco de café">
+                <p><spam class="value">40 R$</spam><span class="second-value">60 R$</span></p>
+                <button>+ adicionar ao carrinho</button>
+            </div>
+        </section>
             </div>
         </section>
         <section class="sistemas">
             <div>
                 <img src="assets/catalogo/entrega.svg" alt="Imagem de entrega gratuita">
-                <h6>Entrega Gratuita</h6>
+                <h6>Entrega </br> Gratuita</h6>
             </div>
             <div>
                 <img src="assets/catalogo/pagamento.svg" alt="Imagem de Pagamento na entrega">
-                <h6>Pagamento na Entrega</h6>
+                <h6>Pagamento </br>na Entrega</h6>
             </div>
             <div>
                 <img src="assets/catalogo/reembolso.svg" alt="Imagem de Política de reembolso">
-                <h6>Política de reembolso</h6>
+                <h6>Política de</br> reembolso</h6>
             </div>  <div>
                 <img src="assets/catalogo/desconto.svg" alt="Imagem de Sistema de descontos acumuláveis">
-                <h6>Sistema de descontos acumuláveis</h6>
+                <h6>Sistema de descontos </br>acumuláveis</h6>
             </div>
             <div>
                 <img src="assets/catalogo/presente.svg" alt="Imagem sobre Presente após compra de 6 caixas de café">
-                <h6>Presente por cada 6 caixas de café</h6>
+                <h6>Presente por cada </br>6 caixas de café</h6>
             </div>                   
         </section>
-        <section class="catalogos">
+        <section class="cafe">
             <div class="catalogo">                
                 <h3>Catálogo de cafés</h3>
                 <p>Mais de 50 tipos de café fresco da torra para qualquer método de preparo</p>                
@@ -140,22 +131,41 @@
                 <p>Todo o que a gente precisa para preparar um café saboroso em casa</p>
             </div>
         </section>
-        <section class="mapas">
-            <h4>Encontre uma loja</h4>
+        <section class="contato">
+            <h3>Encontre uma loja</h3>
             <form>
-                <div class="cidade">
-                    <select name="cidade" placeholder="Escolha a cidade">   
-                </div>                     
-                    <option value="">Escolha a cidade</option>
-                    <option value="SP">São Paulo</option>
+                <select class="escolha">
+                    <option value="valor1">Escolha a cidade</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
                     <option value="RJ">Rio de Janeiro</option>
-                    <option value="RS">Rio Grande do Sul</option>                  
-                    <input type="text" name="busca" placeholder="Digite o endereço">
-                    </select>                                         
-                <button>Procurar</button>             
-            </form>
+                    <option value="RN">Rio grande do sul </option>
+                    <option value="RS">Rio Grande do sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <input  class="Digi-ende" type="text" placeholder="Digite o endereço">           
         </section>        
-        <section class="mapa">
+        <section class="iframe">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.3955613224!2d-46.92495496810426!3d-23.68143460924784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1684331232660!5m2!1spt-BR!2sbr" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>  
@@ -175,13 +185,12 @@
             </div>
             <div class="container">
                 <h6>PRODUTOS</h6>
-                    <ul>
-                        <li><a href="https://projeto-cafe-leofarkas.vercel.app">Café</a></li>
-                        <li><a href="https://projeto-cafe-leofarkas.vercel.app">Té</a></li>
-                        <li><a href="https://projeto-cafe-leofarkas.vercel.app">Acessórios</a></li>
-                        <li><a href="https://projeto-cafe-leofarkas.vercel.app">Ofertas</a></li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="https://projeto-cafe-leofarkas.vercel.app">Café</a></li>
+                    <li><a href="https://projeto-cafe-leofarkas.vercel.app">Té</a></li>
+                    <li><a href="https://projeto-cafe-leofarkas.vercel.app">Acessórios</a></li>
+                    <li><a href="https://projeto-cafe-leofarkas.vercel.app">Ofertas</a></li>
+                </ul>              
             </div>
             <div class="container">
                 <h6>REDES SOCIAIS</h6>
